@@ -12,6 +12,9 @@ public class Calculator{
 			case 2:
 				result = sub(Double.parseDouble(args[1]), Double.parseDouble(args[2]));
 			    break;
+			case 3:
+				result = product(Double.parseDouble(args[1]), Double.parseDouble(args[2]));
+			    break;
 			default:
 				break;	
 
@@ -30,5 +33,9 @@ public class Calculator{
 
 		return a + b;
 	}
+	
+	public static double product(double a, double b){
 
+		return a * b;
+	}
 }
