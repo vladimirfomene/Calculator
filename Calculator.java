@@ -15,6 +15,9 @@ public class Calculator{
 			case 3:
 				result = product(Double.parseDouble(args[1]), Double.parseDouble(args[2]));
 			    break;
+			case 4:
+				result = division(Double.parseDouble(args[1]), Double.parseDouble(args[2]));
+				break;
 			default:
 				break;	
 
@@ -37,5 +40,8 @@ public class Calculator{
 	public static double product(double a, double b){
 
 		return a * b;
+	}
+	public static double division (double a, double b){
+		return a / b;
 	}
 }
